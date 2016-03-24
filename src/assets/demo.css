@@ -1,0 +1,18 @@
+.container {
+    /*align-items: flex-start;;
+    display: flex;*/
+}
+
+.component {
+    /*flex: 1 1 25%;*/
+}
+
+.component + .component {
+    border-top: 1px solid #000;
+}
+
+.code {
+    /*border: 1px solid #007;*/
+    padding: 1em;
+    white-space: pre;
+}
