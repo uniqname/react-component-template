@@ -26,7 +26,7 @@ export default ({
                    id={id} />
 
             <div className={ style.details }>
-                {children}
+              {children}
             </div>
         </div>
     );

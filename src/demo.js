@@ -18,7 +18,7 @@ const demoData = [
         summary: "Abraham Lincoln",
         open: true,
         groupName: 'quotes',
-        clickAction: () => console.log('click') // eslint-disable-line
+        clickAction: (e) => console.log('click', e) // eslint-disable-line
     }, {
         details: "Indeed, a major source of objection to a free economy is precisely that it... gives people what they want instead of what a particular group thinks they ought to want. Underlying most arguments against the free market is a lack of belief in freedom itself.",
         groupName: 'quotes',
@@ -41,9 +41,10 @@ const demoData = [
 
 export default (
     <div>
-
         <div className={demoStyle.container}>
-            <MyComponent />
+            <MyComponent>
+              <p>Nothin&apos; to see here folks.</p>
+            </MyComponent>
             <h5>Default (no props provided)</h5>
         </div>
 
@@ -51,7 +52,7 @@ export default (
 
         <div className={demoStyle.container}>
         {demoData.map( (d, i) => (
-            <MyComponent {...d} className={demoStyle.component} clickAction={ (e)=>console.log(e) } key={i}>
+            <MyComponent {...d} className={demoStyle.component} key={i}>
                 { d.details }
             </MyComponent>
         ))}

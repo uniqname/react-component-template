@@ -7,6 +7,7 @@ takes care of ensuring unique class names
 */
 .container {
     padding: .5em;
+    display: block;
 }
 
 .container + .container {
@@ -32,4 +33,8 @@ takes care of ensuring unique class names
     max-height: 0;
     overflow: hidden;
     /*transition: all .25s linear;*/
+}
+
+.measurer {
+  position: relative;
 }

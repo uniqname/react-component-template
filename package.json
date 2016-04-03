@@ -21,7 +21,10 @@
   ],
   "author": "Jared Anderson <jared.anderson@ldschurch.org>",
   "contributors": [
-      "Jared Anderson <jared.anderson@ldschurch.org"
+      "Cory Brown <oh.wise.man@gmail.com"
+  ],
+  "maintainers": [
+      "Cory Brown <oh.wise.man@gmail.com"
   ],
   "license": "ICS",
   "devDependencies": {
